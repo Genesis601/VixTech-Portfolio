@@ -156,7 +156,7 @@
     .silhouette { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:170px; }
     .sil-head { width:72px;height:72px;background:var(--light);border-radius:50%;margin:0 auto;position:relative;z-index:2; }
     .sil-body { width:140px;height:180px;background:var(--light);border-radius:70px 70px 0 0;margin:-10px auto 0; }
-    .profile-photo-hint { position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,20,40,.8),transparent);color:rgba(255,255,255,.7);font-size:.75rem;text-align:center;padding:.8rem;font-style:italic; }
+    .profile-photo-hint { width:340px; position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,20,40,.8),transparent);color:rgba(255,255,255,.7);font-size:.75rem;text-align:center;padding:.8rem;font-style:italic; }
     .float-badge { position:absolute;background:var(--white);border-radius:12px;padding:.6rem .9rem;box-shadow:0 8px 24px rgba(12,29,50,.15);display:flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;color:var(--navy);animation:float 4s ease-in-out infinite; }
     .float-badge .icon { font-size:1.1rem; }
     .fb-1 { top:20px;left:-30px;animation-delay:0s; }
@@ -454,7 +454,6 @@
     <div class="photos-header reveal">
       <div class="section-label">The Person Behind the Code</div>
       <h2 style="color:var(--navy)">Meet the Developer</h2>
-      <p>Real faces build real trust. This is the mind and hands behind VixTech Developers.</p>
     </div>
     <div class="photos-grid">
 
@@ -462,10 +461,9 @@
       <div class="photo-frame reveal">
         <img src="vixtech.jpeg" alt="VixTech Developer" loading="lazy"
              onerror="this.style.display='none'"/>
-        <!-- Placeholder shown until you add a real image -->
         <div class="photo-placeholder">
-          <div class="ph-icon">📸</div>
-          <div class="ph-text">Add your photo here<br><small>src="YOUR_PHOTO_1.jpg"</small></div>
+          <div class="ph-text"><img src="vixtech.jpeg" alt="VixTech Developer" loading="lazy"
+             onerror="this.style.display='none'"/></div>
         </div>
         <div class="photo-badge">
           <div class="pb-name">VixTech Developer</div>
@@ -479,8 +477,8 @@
         <img src="vixtech2.jpeg" alt="VixTech Developer at work" loading="lazy"
              onerror="this.style.display='none'"/>
         <div class="photo-placeholder">
-          <div class="ph-icon">📸</div>
-          <div class="ph-text">Add your photo here<br><small>src="YOUR_PHOTO_2.jpg"</small></div>
+          <div class="ph-text"><img src="vixtech2.jpeg" alt="VixTech Developer at work" loading="lazy"
+             onerror="this.style.display='none'"/></div>
         </div>
         <div class="photo-badge">
           <div class="pb-name">Building with Purpose</div>
